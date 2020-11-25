@@ -6,10 +6,6 @@
 #### VER 1.0    	          ####
 ##################################
 
-#Montando pasta remota em ponto de montagem temporario (os arquivos serao copiados daqui)
-# o parametro -W informa o dominio ou grupo de trabalho. usar netbiosname no caminho do compartilhamento.
-
-
 
 ### VARIAVEIS ###
 
