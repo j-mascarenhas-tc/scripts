@@ -6,7 +6,15 @@
 #### VER 1.0    	          ####
 ##################################
 
+#Montando pasta remota em ponto de montagem temporario (os arquivos serao copiados daqui)
+# o parametro -W informa o dominio ou grupo de trabalho. usar netbiosname no caminho do compartilhamento.
+
+
+
 ### VARIAVEIS ###
+
+
+
 DATA=$(date +%Y-%m-%d.%H.%M.%S)
 DIASEMANA=$(date +%w)
 
@@ -28,6 +36,15 @@ DIAFULL="5"
 RETENCAOFULL="30"
 RETENCAOINCR="14"
 EMAIL="mariorpn@gmail.com"
+##
+# MONTANDO PASTA REMOTA, ALTERE DE ACORDO COM SEU AMBIENTE
+USER="root"
+REMOTESERVER="192.168.2.100"
+
+mount_smbfs -I //${USER}@${REMOTESERVER}/backup ${DESTINO}
+echo "Pasta remota montada!"
+
+
 
 ### FUNCOES ###
 backup_full() {
