@@ -31,7 +31,7 @@ INCRFILE="backup-incremental.${DATA}.${DIASEMANA}.tar"
 DIAFULL="5"
 RETENCAOFULL="30"
 RETENCAOINCR="14"
-EMAIL="mariorpn@gmail.com"
+EMAIL="josemar@josemar.com.br" #  kkk altere para seu email 
 ##
 # MONTANDO PASTA REMOTA, ALTERE DE ACORDO COM SEU AMBIENTE
 USER="root"
