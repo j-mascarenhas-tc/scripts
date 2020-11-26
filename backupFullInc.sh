@@ -14,9 +14,9 @@
 DATA=$(date +%Y-%m-%d.%H.%M.%S)
 DIASEMANA=$(date +%w)
 
-ORIGEM="/mnt/Data00/Torrent"
-DESTINO="/mnt/Data01/Backup"
-LOGLOCAL="/mnt/Data01/Backup/log"
+ORIGEM="/home/josemar/Downloads"
+DESTINO="/tmp/backup"
+LOGLOCAL="/tmp/backup/log"
 
 LOGFULLOUT="${LOGLOCAL}/backup-full.${DATA}.${DIASEMANA}.log"
 LOGFULLERR="${LOGLOCAL}/backup-full.${DATA}.${DIASEMANA}.err"
@@ -34,11 +34,11 @@ RETENCAOINCR="14"
 EMAIL="josemar@josemar.com.br" #  kkk altere para seu email 
 ##
 # MONTANDO PASTA REMOTA, ALTERE DE ACORDO COM SEU AMBIENTE
-USER="root"
-REMOTESERVER="192.168.2.100"
+# USER="root"
+# REMOTESERVER="192.168.1.21"
 
-mount_smbfs -I //${USER}@${REMOTESERVER}/backup ${DESTINO}
-echo "Pasta remota montada!"
+# mount_smbfs -I ${REMOTESERVER} //${USER}@${REMOTESERVER}/backup ${DESTINO}
+# echo "Pasta remota montada!"
 
 
 
