@@ -87,6 +87,9 @@ limpa_bkp_incr() {
 	find ${DESTINO} -type f -regex "backup-incremental\.*\.tar" -mtime +${RETENCAOINCR} -exec rm -f '{}' \;
 }
 
+#echo ${DESTINO}/${INCRFILE}  ${LOGCTRL} ${ORIGEM}  ${LOGINCOUT}  ${LOGINCERR}
+#read
+
 ### EXECUCAO BACKUP ####
 if [ $DIAFULL -eq ${DIASEMANA} ]; then
 	backup_full
